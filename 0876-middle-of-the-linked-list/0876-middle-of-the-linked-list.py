@@ -9,7 +9,17 @@ class Solution(object):
         :type head: ListNode
         :rtype: ListNode
         """
+        slow = fast = head
         
+        while fast != None and fast.next != None:
+            slow = slow.next
+            fast = fast.next.next
+            
+            
+        return slow
+        
+        
+''' 어레이에 때려넣고 길이 구해서 찾는 쉬운 방법 (두 방법 모두 시간복잡도는 O(n))
         carry = head
         nodes = []
         
@@ -19,4 +29,7 @@ class Solution(object):
         nodes.append(carry)
             
         return nodes[int((len(nodes))/ 2)]
-    
+'''
+        
+        
+        
