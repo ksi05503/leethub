@@ -23,6 +23,15 @@ class Solution(object):
             
         return ' '.join(words)
 
+
+
+''' 일부러 직접 구현했는데, 파이썬스럽게 요약하면 아래와 같다.
+        words = s[::-1].split()
+        return " ".join(list(reversed(words)))
+
+    다른 답변들과 달리 먼저 전체 s 를 통째로 reverse 시키면 시간복잡도를 O(n) 으로 줄일 수 있다.
+'''
+
             
             
             
