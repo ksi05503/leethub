@@ -23,5 +23,7 @@ class Solution(object):
             
         return max(current, result)
             
+        
+# 실무에서 사용했던 해시테이블
             
             
